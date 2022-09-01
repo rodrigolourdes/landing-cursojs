@@ -391,3 +391,21 @@ footer {
   font-weight: var(--font-bold);
   font-style: italic;
 }
+
+@media (max-width: 800px) {
+    
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-gallery {
+        grid-template-columns: 1fr;
+    }
+    .gallery-img {
+        padding: 2rem 0;
+    }
+}
