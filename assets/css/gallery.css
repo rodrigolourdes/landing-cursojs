@@ -1,0 +1,16 @@
+.gallery-img {
+    padding: 1rem;
+    margin-bottom: 5rem;
+    }
+    
+    .gallery-img img {
+      transform: all 300ms ease-in-out;
+    }
+    
+    .gallery-img img:hover {
+      transform: translate(-3%, 3%) scale(1.1) rotate(5deg);
+    }
+    
+    .gallery-img p {
+      margin: 0;
+    }

@@ -1,0 +1,4 @@
+.white-bg-footer {
+    background: var(--white-color);
+    color: var(--primary-color);
+  }

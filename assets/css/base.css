@@ -1,0 +1,38 @@
+.main-bg {
+  background-image: url("../img/main-bg.svg");
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+
+.white-bg {
+  background: var(--white-color);
+  color: var(--primary-color);
+  margin: 0 auto;
+}
+
+.main-content {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--spacings-xlarge);
+}
+
+.white-content {
+max-height: 100%;
+max-width: 100%;
+margin: 0 auto;
+text-align: center;
+}
+
+.white-content h2 {
+  padding: var(--spacings-large);
+  }
+
+.section {
+  min-height: 100vh;
+  margin-bottom: var(--spacings-large);
+}
+
+
+

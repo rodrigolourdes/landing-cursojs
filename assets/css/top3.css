@@ -1,0 +1,43 @@
+.top3-content {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .grid-main-heading {
+    margin-bottom: 1rem;
+  }
+  
+  .grid-description {
+    margin-bottom: 5rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .grid h3 {
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+  }
+  
+  .grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: var(--font-xlarge);
+    font-style: italic;
+    top: -1.9rem;
+    left: -1.3rem;
+    transform: rotate(5deg);
+  }
+  
+  .grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
