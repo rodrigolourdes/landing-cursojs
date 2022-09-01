@@ -78,8 +78,8 @@ a {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 article {
@@ -208,7 +208,7 @@ table th {
   left: 50%;
   width: 0;
   height: 0.2rem;
-  background: var(--primary-color);
+  background: var(--secundary-color);
   transition: all 200ms ease-in-out;
 }
 
@@ -289,7 +289,6 @@ table th {
 .grid-gallery {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-
 }
 
 .gallery-img {
@@ -323,8 +322,8 @@ table th {
 }
 
 .form-group legend {
-    font-size: var(--font-xsmall);
-    font-style: italic;
+  font-size: var(--font-xsmall);
+  font-style: italic;
 }
 
 .form-group label {
@@ -332,7 +331,7 @@ table th {
   margin-bottom: 1rem;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
   border: none;
   background: var(--white-color);
@@ -342,9 +341,9 @@ table th {
   outline: none;
 }
 
-.form-group input:focus, 
+.form-group input:focus,
 .form-group textarea:focus {
-    box-shadow: 0 0 15px var(--secundary-color);
+  box-shadow: 0 0 15px var(--secundary-color);
 }
 
 div .full-width {
@@ -372,10 +371,10 @@ div .full-width {
 }
 
 footer {
-    margin-top: -4.9rem;
+  margin-top: -4.9rem;
 }
- 
-.white-bg-footer p ,
+
+.white-bg-footer p,
 .footer-content p {
   background: var(--white-color);
   color: var(--primary-color);
@@ -385,27 +384,93 @@ footer {
   font-size: var(--font-small);
 }
 
-.white-bg-footer a ,
+.white-bg-footer a,
 .footer-content a {
   color: var(--primary-color);
   font-weight: var(--font-bold);
   font-style: italic;
 }
 
+.close-menu {
+  display: none;
+}
+
 @media (max-width: 800px) {
-    
-    .intro-content {
-        grid-template-columns: 1fr;
-    }
+  .intro-content {
+    grid-template-columns: 1fr;
+  }
 
-    .grid {
-        grid-template-columns: 1fr;
-    }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 
-    .grid-gallery {
-        grid-template-columns: 1fr;
-    }
-    .gallery-img {
-        padding: 2rem 0;
-    }
+  .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+  .gallery-img {
+    padding: 2rem 0;
+  }
+
+  .menu {
+    bottom: 0;
+    text-align: center;
+  }
+
+  .menu-content {
+    flex-direction: column;
+  }
+
+  div.menu-content > h1 > a {
+    margin-right: 3rem;
+  }
+
+  .menu-content,
+  .menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu-content {
+    height: 100vh;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .close-menu {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+
+  .close-menu-label::after {
+    content: '≡';
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: var(--font-medium);
+    line-height: var(--spacings-small);
+    width: var(--spacings-medium);
+    height: var(--spacings-medium);
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .close-menu:checked~.menu {
+    display: block;
+  }
+
+  .close-menu:checked~.close-menu-label::after {
+    content: '×';
+  }
+
+  .menu-spacing {
+    display: none;
+  }
 }
